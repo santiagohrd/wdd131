@@ -9,7 +9,7 @@ header{
 } 
 h1{
     text-align: left;
-    color: whitesmoke;
+    color: black;
 }
 nav{
     display: flex;
@@ -20,10 +20,10 @@ nav{
 }
 nav > a:link, a:visited {
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
 }
 nav a:hover{
-    color: black;
+    color: whitesmoke;
     font-size: 18px;
 }
 #menu {
