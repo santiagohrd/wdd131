@@ -6,6 +6,7 @@ header{
     display: flex;
     align-items: center;
     padding: 1rem;
+    position: relative;
 } 
 h1{
     text-align: left;
@@ -43,6 +44,7 @@ nav a:hover{
 #menu.open::before {
 	content: "✖️";
 }
+
 .navigation a {
 	display: none;
 	padding: 1rem;
@@ -62,6 +64,10 @@ main{
     margin: 32px auto;
     max-width: 80%;
     justify-content: center;
+}
+img {
+    width: 100%; 
+    height: auto; 
 }
 figcaption{
     text-align: center;
