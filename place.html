@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+    <header><h1>Colombia</h1></header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="/images/place-large.webp" width="1280" height="720">
+                <img src="images/place-small.webp" alt="Mono" width="500" height="889">
+            </picture>
+        </div>
+        <section id="Data">
+            <h2>Data</h2>
+            <p><span class="bold">Area: </span>109665 km²</p>
+            <p><span class="bold">Population: </span>53293</p>
+            <p><span class="bold">Capital: </span>Leticia</p>
+            <p><span class="bold">Languagues: </span>Spanish</p>
+            <p><span class="bold">Currency: </span>Colombian Peso</p>
+            <p><span class="bold">Time Zone: </span>UTC-05:00</p>
+            <p><span class="bold">Calling code: </span>608</p>
+            <p><span class="bold">Internet TLD: </span>.co</p>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <div class="weather-icon"><img src="/images/weatherIcon.svg" alt="Weahter icon"></div>
+            <p><span class="bold">Temperature: </span><span id="temp"></span></p>
+            <p><span class="bold">Conditions: </span>Partly cloud</p>
+            <p><span class="bold">Wind:     </span><span id="wind"></span></p>
+            <p><span class="bold">Wind Chill: </span><span id="windChill"></span></p>
+
+        </section>
+    </main>
+    <footer>
+        <p><span id="copyright"></span>Jaime Santiago Herrera David 🇨🇴 Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</body>
+</html>
