@@ -2,6 +2,8 @@ const currentTemp = document.querySelector('#temp');
 const wind = document.querySelector('#wind');
 const windChill = document.querySelector('#windChill')
 
+
+
 function calculateWindChill(temperature, windSpeed){
     if (temperature <= 10 && windSpeed > 4.8) {
         return (
