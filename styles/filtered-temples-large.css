@@ -1,5 +1,5 @@
 @media screen and (min-width: 600px) {
-    main {
+    .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -27,7 +27,7 @@
     .navigation a{
         display: block;
     }
-    main{
+    .container{
         grid-template-columns: 1fr 1fr 1fr;
     }
     h2{
