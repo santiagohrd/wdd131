@@ -86,6 +86,7 @@ const temples = [
 
 
 const displayTemples = (temples) => {
+    document.querySelector('.container').innerHTML = "";
 temples.forEach((temple) => {
     let card = document.createElement("section");
     let name = document.createElement("h3");
@@ -118,3 +119,47 @@ temples.forEach((temple) => {
 
 }
 displayTemples(temples);
+
+const home = document.querySelector('#home');
+const new_temples = document.querySelector('#new');
+const old_temples = document.querySelector('#old');
+const small_temples = document.querySelector('#small');
+const large_temples = document.querySelector('#large');
+
+home.addEventListener("click", () => {
+    displayTemples(temples);
+})
+
+old_temples.addEventListener("click", () => {
+    displayTemples(
+        temples.filter((temple) => {
+        const year = parseInt(temple.dedicated.split(',')[0]);
+        return year < 1990;
+       })
+    );
+});
+  
+new_temples.addEventListener("click", () => {
+    displayTemples(
+        temples.filter((temple) => {
+            const year = parseInt(temple.dedicated.split(',')[0]);
+            return year >= 2000;
+        })
+    );
+});
+
+large_temples.addEventListener("click", () => {
+    displayTemples(
+        temples.filter((temple) => {
+            return temple.area > 90000
+        })
+    );
+});
+
+small_temples.addEventListener("click", () => {
+    displayTemples(
+        temples.filter((temple) => {
+            return temple.area < 10000
+        })
+    );
+});
