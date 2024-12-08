@@ -127,6 +127,7 @@ const small_temples = document.querySelector('#small');
 const large_temples = document.querySelector('#large');
 
 home.addEventListener("click", () => {
+    cards.innerHTML = "";
     displayTemples(temples);
 })
 
