@@ -39,22 +39,37 @@ function populateProductOptions() {
 
 populateProductOptions();
 
-let reviewCount = localStorage.getItem('reviewCount');
-if (!reviewCount) {
-    reviewCount = 0; 
-} else {
-    reviewCount = parseInt(reviewCount); 
+//Contador de reviews
+function getReviewCount() {
+    let count = localStorage.getItem('reviewCount');
+    if (!count) {
+        count = 0; 
+    } else {
+        count = parseInt(count); 
+    }
+    return count;
 }
 
-const reviewCountElement = document.getElementById('reviewCount');
-reviewCountElement.textContent = reviewCount;
+function setReviewCount(count) {
+    localStorage.setItem('reviewCount', count);
+}
+
+function updateReviewCountDisplay() {
+    const reviewCount = getReviewCount(); 
+    const reviewCountElement = document.getElementById('reviewCount');
+    reviewCountElement.textContent = reviewCount;
+}
+
+function incrementReviewCount() {
+    let currentCount = getReviewCount(); 
+    currentCount++; 
+    setReviewCount(currentCount); 
+    updateReviewCountDisplay(); 
+}
+
+updateReviewCountDisplay();
 
 document.getElementById('reviewForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    reviewCount++;
-
-    localStorage.setItem('reviewCount', reviewCount);
-
-    reviewCountElement.textContent = reviewCount;
+    incrementReviewCount(); 
+    event.preventDefault(); 
 });
