@@ -28,15 +28,33 @@ const products = [
 
   const productSelect = document.getElementById("product-name");
 
-// Función para poblar las opciones
 function populateProductOptions() {
   products.forEach(product => {
-    const option = document.createElement("option"); // Crear elemento <option>
-    option.value = product.id;  // Asignar el id como valor
-    option.textContent = product.name; // Asignar el nombre como texto visible
-    productSelect.appendChild(option); // Añadir la opción al <select>
+    const option = document.createElement("option"); 
+    option.value = product.id; 
+    option.textContent = product.name; 
+    productSelect.appendChild(option); 
   });
 }
 
-// Llamada a la función para poblar opciones
 populateProductOptions();
+
+let reviewCount = localStorage.getItem('reviewCount');
+if (!reviewCount) {
+    reviewCount = 0; 
+} else {
+    reviewCount = parseInt(reviewCount); 
+}
+
+const reviewCountElement = document.getElementById('reviewCount');
+reviewCountElement.textContent = reviewCount;
+
+document.getElementById('reviewForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    reviewCount++;
+
+    localStorage.setItem('reviewCount', reviewCount);
+
+    reviewCountElement.textContent = reviewCount;
+});
