@@ -67,10 +67,10 @@ function incrementReviewCount() {
     updateReviewCountDisplay(); 
 }
 
+updateReviewCountDisplay();
 
 document.getElementById('reviewForm').addEventListener('submit', function(event) {
     incrementReviewCount(); 
     event.preventDefault(); 
 });
 
-updateReviewCountDisplay();
