@@ -26,7 +26,7 @@ const products = [
     }
   ];
 
-  const productSelect = document.getElementById("product-name");
+  const productSelect = document.querySelector('#product-name');
 
 function populateProductOptions() {
   products.forEach(product => {
