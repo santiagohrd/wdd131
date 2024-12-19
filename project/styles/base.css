@@ -277,17 +277,17 @@ select {
 .checkbox-container {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espacio entre cada fila */
+    gap: 10px; 
 }
 
 .checkbox-item {
     display: flex;
     align-items: center;
-    gap: 10px; /* Espacio entre checkbox y texto */
+    gap: 10px; 
 }
 
 .checkbox-item input[type="checkbox"] {
-    margin: 0; /* Elimina el margen predeterminado del checkbox */
+    margin: 0;  
 }
 
 button.btn-form {
