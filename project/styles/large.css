@@ -1,0 +1,68 @@
+@media screen and (min-width: 700px){
+    #menu{
+        display: none;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+    .navigation{
+        align-items: center;
+        display: flex;
+        gap: 1.5rem;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+
+    nav {
+        height: 120px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px; 
+    }
+
+    .navigation li{
+        list-style: none;
+        display: list-item;
+    }
+    
+    #sub-navigation{
+        flex-direction: row;
+
+    }
+    .sub-navigation{
+        height: 210px;
+        max-width: 300px;
+    }
+    .sub-navigation p{
+        display: block;
+    }
+    .info{
+        display: none;
+    }
+
+    #bestAnimals{
+        flex-direction: row;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        align-items: center;
+    }
+
+    .grid img {
+        border: 1px solid #fff;
+    }
+
+    .list section > * {
+        max-width: 900px;
+        margin: 0 1rem;
+    }
+    footer{
+        flex-direction: row;
+    }
+}

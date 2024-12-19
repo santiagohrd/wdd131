@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Herrera">
+    <meta name="description"
+        content="WDD 131 Final project: This website is designed to share fun and interesting facts about animals, their habitats, and why they are important to our world. It’s a space for everyone who loves and wants to learn about animals.">
+    <title>interestinganimal.net</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="Logo">
+        </div>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="animals.html">Animals</a></li>
+            <li><a href="care.html">Care</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="why">
+            <p>
+                Protecting animals is a shared responsibility. Many species face challenges such as habitat loss, neglect, and poaching. By joining our community, you can help make a difference through education, volunteering, and spreading awareness about animal care and protection.
+            </p>
+            <button id="careBtn"><a href="#joinForm">Join Us</a></button>
+        </section>
+        
+        <section class="care-animals">
+            <div>
+                <h3>Why Animal Care Matters</h3>
+                <p>
+                    Animals play a crucial role in maintaining ecosystems and enriching our lives. Proper care ensures their well-being, reduces suffering, and helps preserve species for future generations. By understanding their needs, we can contribute to a better world.
+                </p>
+            </div>
+            <div>
+                <h3>Simple Ways to Help</h3>
+                <p>
+                    You don’t need to do something extraordinary to make a difference. You can help by adopting animals responsibly, donating to shelters, volunteering at foundations, or even sharing information about endangered species and animal welfare.
+                </p>
+            </div>
+            <div>
+                <h3>Be Part of the Change</h3>
+                <p>
+                    When you care for animals, you become part of a bigger mission: protecting life and biodiversity. Join us to learn more, take action, and inspire others to protect and care for the creatures we share this planet with.
+                </p>
+            </div>
+        </section>
+        
+        <form id="joinForm" action="thankyou.html" method="post">
+            <div id="formmessage"></div>
+            <h2>Join Our Animal Care Community</h2>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br>
+        
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+        
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+            </fieldset>
+        
+            <fieldset>
+                <legend>How Would You Like to Help?</legend>
+                <label for="role">Select a Role</label><br>
+                <select name="role" id="role" required>
+                    <option value="" disabled selected>Choose a role...</option>
+                    <option value="volunteer">Volunteer</option>
+                    <option value="foster">Foster a Pet</option>
+                    <option value="donate">Donate Supplies</option>
+                    <option value="event">Organize Events</option>
+                </select><br>
+        
+                <label>Skills or Interests (Check all that apply)</label><br>
+                <input type="checkbox" id="care" name="skills" value="Animal Care">
+                <label for="care">Animal Care</label><br>
+                <input type="checkbox" id="rescue" name="skills" value="Animal Rescue">
+                <label for="rescue">Animal Rescue</label><br>
+                <input type="checkbox" id="education" name="skills" value="Education Programs">
+                <label for="education">Education Programs</label><br>
+                <input type="checkbox" id="admin" name="skills" value="Administrative Support">
+                <label for="admin">Administrative Support</label><br>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Tell Us More About You</legend>
+                <label for="experience">Why are you interested in joining?</label><br>
+                <textarea id="experience" name="experience" rows="4" placeholder="Share your motivation..."></textarea><br>
+        
+                <label for="availability">Availability</label><br>
+                <input type="text" id="availability" name="availability" placeholder="e.g., Weekends, Weekdays, Evenings" required><br>
+            </fieldset>
+        
+            <button class="btn-form" type="submit">Join Now</button>
+        </form>
+    </main>
+    <footer>
+        <div class="aboutus">
+            <h3>About Me</h3>
+            <p>
+                Hi! My name is Santiago Herrera, and I’m passionate about animals and nature. This site reflects my love for learning about fascinating creatures and sharing their unique traits. My goal is to inspire others to care for and protect these amazing beings.
+            </p>
+        </div>
+        <div class="project">
+            <h3>About This Project</h3>
+            <p>
+                This project is designed to educate and spread awareness about some of my favorite animals for WDD131 course. From interesting facts to conservation efforts, the content here aims to highlight the beauty, intelligence, and importance of animals in our world.
+            </p>
+        </div>
+    </footer>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/animalsList.js" defer></script>
+</body>
+</html>

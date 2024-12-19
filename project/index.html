@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Herrera">
+    <meta name="description"
+        content="WDD 131 Final project: This website is designed to share fun and interesting facts about animals, their habitats, and why they are important to our world. It’s a space for everyone who loves and wants to learn about animals.">
+    <title>interestinganimal.net</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="Logo">
+        </div>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="animals.html">Animals</a></li>
+            <li><a href="care.html">Care</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="banner">
+            <h1>Wellcome to my favorite animals</h1>
+            <picture>
+                <source media="(min-width: 500px)" srcset="images/hero-large.webp" width="1200" height="700">
+                <img src="images/hero-small.webp" alt="Monckey" width="600" height="700">
+            </picture>
+        </div>
+        <div class="introduction">
+            <p>Welcome to this space where I share my passion for animals! From the most intelligent mammals to the smallest, most fascinating creatures, animals inspire us in so many ways.  
+                Here you’ll find interesting facts, information about their habitats, and how we can protect these wonderful beings. Discover their beauty and learn why they are truly special.
+            </p></p>
+        </div>
+        <section id="sub-navigation">
+            <div class="sub-navigation">
+                <h3>Elephants' Incredible Memory</h3>
+                <p>
+                    Elephants are known for their impressive memory. They can remember places, other elephants, and even humans for years. Their brains are the largest among land animals, which helps them survive and form deep family bonds.
+                </p>
+                <button class="info">+ info</button>
+            </div>
+            <div class="sub-navigation">
+                <h3>Dolphins' Intelligence</h3>
+                <p>
+                    Dolphins are incredibly intelligent animals that communicate using clicks, whistles, and body movements. They are social creatures, often seen working together to hunt or play. Their intelligence makes them one of the ocean's most fascinating species.
+                </p>
+                <button class="info">+ info</button>
+            </div>
+            <div class="sub-navigation">
+                <h3>Monarch Butterflies' Migration</h3>
+                <p>
+                    Monarch butterflies travel thousands of miles during migration. This small yet resilient insect journeys from Canada to Mexico every year, making it one of the most incredible natural phenomena in the animal kingdom.
+                </p>
+                <button class="info">+ info</button>
+            </div>
+        </section>
+        
+        <section id="bestAnimals">
+            <div class="animals">
+                <h3>Tigers</h3>
+                <p>
+                    Tigers are the largest members of the cat family. Known for their striking orange and black stripes, they are strong swimmers and often live near water. Sadly, they are endangered due to habitat loss and poaching.
+                </p>
+            </div>
+            <div class="animals">
+                <h3>Penguins</h3>
+                <p>
+                    Penguins are flightless birds that thrive in cold environments, particularly Antarctica. They are excellent swimmers, using their wings to "fly" underwater while hunting for fish. Penguins live in colonies, providing warmth and safety.
+                </p>
+            </div>
+            <div class="animals">
+                <h3>Hummingbirds</h3>
+                <p>
+                    Hummingbirds are tiny, colorful birds known for their ability to hover in mid-air by rapidly flapping their wings. They are the only birds capable of flying backward and play a critical role as pollinators for plants.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="aboutus">
+            <h3>About Me</h3>
+            <p>
+                Hi! My name is Santiago Herrera, and I’m passionate about animals and nature. This site reflects my love for learning about fascinating creatures and sharing their unique traits. My goal is to inspire others to care for and protect these amazing beings.
+            </p>
+        </div>
+        <div class="project">
+            <h3>About This Project</h3>
+            <p>
+                This project is designed to educate and spread awareness about some of my favorite animals for WDD131 course. From interesting facts to conservation efforts, the content here aims to highlight the beauty, intelligence, and importance of animals in our world.
+            </p>
+        </div>
+    </footer>
+    
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/animalsList.js" defer></script>
+</body>
+</html>
